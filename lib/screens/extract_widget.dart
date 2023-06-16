@@ -3,6 +3,23 @@ import 'package:flutter/material.dart';
 
 import '../widgets/chat_item.dart';
 
+class ExtractWidgetScreen extends StatelessWidget {
+  const ExtractWidgetScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Flutter Catalog'),
+        ),
+        body: ListTilePage(),
+      ),
+    );
+  }
+}
+
 class ListTilePage extends StatelessWidget {
   ListTilePage({
     super.key,
