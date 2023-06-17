@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/screens/stateful.dart';
+import 'package:flutter_catalog/screens/app_bar.dart';
 
 void main() {
-  runApp(const StatefullScren());
+  runApp(AppBarScreen());
 }
 
 // ExtractWidgetScreen()

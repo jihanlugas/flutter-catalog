@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-class StatefullScren extends StatefulWidget {
-  const StatefullScren({super.key});
+class StatefullScreen extends StatefulWidget {
+  const StatefullScreen({super.key});
 
   @override
-  State<StatefullScren> createState() => _StatefullScrenState();
+  State<StatefullScreen> createState() => _StatefullScreenState();
 }
 
-class _StatefullScrenState extends State<StatefullScren> {
+class _StatefullScreenState extends State<StatefullScreen> {
+  int counter = 1;
+
   @override
   Widget build(BuildContext context) {
-    int counter = 1;
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Statefull')),
@@ -28,7 +29,7 @@ class _StatefullScrenState extends State<StatefullScren> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    if (counter <= 1) {
+                    if (counter > 1) {
                       setState(() {
                         counter--;
                       });
