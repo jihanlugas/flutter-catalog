@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/screens/text_field_form.dart';
+import 'package:flutter_catalog/screens/grid_view.dart';
 
 void main() {
-  runApp(TextFieldFormScreen());
+  runApp(GridViewScreen());
 }
-
-// ExtractWidgetScreen()
-// StatefullScreen()

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextFieldFormScreen extends StatefulWidget {
-  TextFieldFormScreen({super.key});
+  const TextFieldFormScreen({super.key});
 
   @override
   State<TextFieldFormScreen> createState() => _TextFieldFormScreenState();
@@ -42,7 +42,10 @@ class _TextFieldFormScreenState extends State<TextFieldFormScreen> {
                     print(myController.text);
                   },
                 ),
-                Text(hasil),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Text(hasil),
+                ),
               ],
             ),
           ),
