@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/screens/grid_view.dart';
+import 'package:flutter_catalog/screens/navigation.dart';
 
 void main() {
-  runApp(GridViewScreen());
+  runApp(NavigationScreen());
 }
