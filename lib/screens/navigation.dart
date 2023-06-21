@@ -22,6 +22,18 @@ class NavigationScreenPageSatu extends StatelessWidget {
       appBar: AppBar(
         title: Text('Page Satu'),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) {
+                return NavigationScreenPageDua();
+              },
+            ),
+          );
+        },
+        child: Icon(Icons.arrow_right),
+      ),
     );
   }
 }
@@ -36,6 +48,12 @@ class NavigationScreenPageDua extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Page Dua'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+        child: Icon(Icons.arrow_right),
       ),
     );
   }
