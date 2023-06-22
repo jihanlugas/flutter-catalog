@@ -6,6 +6,7 @@ class NavigationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: NavigationScreenPageSatu(),
     );
   }
@@ -53,7 +54,7 @@ class NavigationScreenPageDua extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).pop();
         },
-        child: Icon(Icons.arrow_right),
+        child: Icon(Icons.arrow_left),
       ),
     );
   }
