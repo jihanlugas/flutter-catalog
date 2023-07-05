@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/screens/theme.dart';
+import 'package:flutter_catalog/screens/media_query.dart';
 
 void main() {
-  runApp(ThemeApp());
+  // untuk set app hanya bisa menghadap ke atas
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations([
+  //   DeviceOrientation.portraitUp,
+  // ]);
+
+  runApp(MediaQueryApp());
 }
