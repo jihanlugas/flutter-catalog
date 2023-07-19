@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/screens/media_query.dart';
+import 'package:flutter_catalog/screens/cupertino.dart';
 
 void main() {
   // untuk set app hanya bisa menghadap ke atas
@@ -8,5 +8,5 @@ void main() {
   //   DeviceOrientation.portraitUp,
   // ]);
 
-  runApp(MediaQueryApp());
+  runApp(CupertinoApp());
 }
