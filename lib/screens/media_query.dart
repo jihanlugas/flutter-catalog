@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 
 class MediaQueryApp extends StatelessWidget {
@@ -43,7 +42,7 @@ class MediaQueryAppScreen extends StatelessWidget {
                   width: mediaQueryWidth,
                   color: Colors.amber,
                 ),
-                Container(
+                SizedBox(
                   height: bodyHeight * 0.5,
                   // color: Colors.red,
                   child: GridView.builder(
